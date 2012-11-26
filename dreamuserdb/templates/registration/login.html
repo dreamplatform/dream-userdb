@@ -1,0 +1,42 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% trans "Login" %}</title>
+  </head>
+
+  <body>
+
+
+      {% if form.errors %}
+        {% trans "Please enter a correct username and password. Note that both fields are case-sensitive" %}
+      {% endif %}
+
+      <form method="POST">
+        {% csrf_token %}
+        <table>
+          <tbody>
+
+            <tr class="field">
+              <td>{{ form.username.label_tag }}</td>
+              <td class="fluid">{{ form.username }}</td>
+            </tr>
+
+            <tr class="field">
+              <td>{{ form.password.label_tag }}</td>
+              <td class="fluid">{{ form.password }}</td>
+            </tr>
+
+            <tr class="actions">
+              <td></td>
+              <td class="fluid clearfix"><input type="submit" class="button" value="{% trans 'Login' %}" /></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </form>
+
+  </body>
+</html>

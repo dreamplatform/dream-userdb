@@ -1,0 +1,58 @@
+[
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "f", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2011-11-11 01:02:17", 
+      "groups": [], 
+      "user_permissions": [
+        [
+          "change_user", 
+          "auth", 
+          "user"
+        ],
+        [
+          "api", 
+          "dreamuserdb", 
+          "service"
+        ]
+      ], 
+      "password": "sha1$e5204$37625a22e7c2e2bf7fe525c2cd6755aad035a379", 
+      "email": "", 
+      "date_joined": "2011-11-11 01:02:17"
+    }
+  },
+  {
+    "pk": 1, 
+    "model": "dreamuserdb.user", 
+    "fields": {
+      "phone_number": "", 
+      "theme_color": "ffffff", 
+      "roles": [
+        1, 
+        2, 
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9, 
+        10
+      ], 
+      "picture_url": null, 
+      "organisations": [
+        1
+      ], 
+      "password_md5": null, 
+      "user": 1, 
+      "groups": []
+    }
+  } 
+]

@@ -1,0 +1,2 @@
+recursive-include dreamuserdb/static *
+recursive-include dreamuserdb/templates *
